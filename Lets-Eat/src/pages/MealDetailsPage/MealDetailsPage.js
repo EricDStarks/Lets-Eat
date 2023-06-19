@@ -2,10 +2,12 @@ import React, {useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import "./MealDetailsPage.scss";
 import CategoryList from '../../components/Category/CategoryList';
-import MealSingle from "../../components/Meal/MealSingle";
+import MealSingle from '../../components/Meal/MealSingle';
 import { useMealContext } from '../../context/mealContext';
 import { startFetchSingleMeal } from '../../actions/mealsActions';
 import Loader from '../../components/Loader/Loader';
+
+
 
 const MealDetailsPage = () => {
   const {id} = useParams();
@@ -44,6 +46,8 @@ const MealDetailsPage = () => {
       ingredients: ingredientsArr,
       measures: measuresArr
     }
+
+    
   }
 
   return (

@@ -1,6 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
+
+
 const MealItem=({data})=>{
     console.log(data)
     // data comes back successfully for mealItem Component 

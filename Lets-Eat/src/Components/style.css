@@ -12,9 +12,15 @@
 }
 
 /* this is the display of images of food */
-img {
+img { 
     width: 100%;
     border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.main .heading img{
+    width: 120px;
+    top: 10px;
+    left: 1000px;
 }
 
 /* this container is for the images in the grid */

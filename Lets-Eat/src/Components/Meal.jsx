@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import MealItem from "./MealItem";
 import RecipeIndex from "./RecipeIndex";
+import 'boxicons'
+import "./style.css"
 
 const Meal = () => {
     // in this useState, insert link LIST ALL MEALS BY FIRST LETTER to recipe api/database 
@@ -32,7 +34,7 @@ const Meal = () => {
 
     // functions searches whether users presses enter 
     const searchRecipe = (evt) => {
-        if(evt.key=="Enter"){
+        if (evt.key == "Enter") {
             setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
         }
     }
@@ -46,7 +48,10 @@ const Meal = () => {
                 </div>
 
                 <div className="searchBox">
-                    <input type="search" className="search-bar" onChange={e=>setSearch(e.target.value)} onKeyPress={searchRecipe}/>
+                    <div className="search-icon">
+                        <box-icon name="search-alt-2"></box-icon>
+                    </div>
+                    <input type="search" className="search-bar" onChange={e => setSearch(e.target.value)} onKeyPress={searchRecipe} />
                 </div>
 
                 <div className="container">

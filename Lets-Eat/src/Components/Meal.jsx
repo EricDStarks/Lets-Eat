@@ -42,7 +42,8 @@ const Meal = () => {
             <div className="main">
                 <div className="heading">
                     <h1>Find Your New Family Tradition</h1>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque tempore unde sed ducimus voluptates illum!</h4>
+                    <img src="Reactasty.png"></img>
+                    <h4>Grandma's recipes are the best! Year after year we prepare and manipulate the family favorites, making the best holiday memories. Over time however, those old index cards deteriorate. Because we want to keep the family traditions rolling, and we don't want to lose the beauty in the history of those recipes, we have decided to make a digital rolodex to salvage these once and continually great formulas to be enjoyed for many more years to come.</h4>
                 </div>
 
                 <div className="searchBox">

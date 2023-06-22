@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
 
+
 const MealItem = ({ data }) => {
+
+
+
+
+const MealItem=({ data }) => {
+
     console.log(data)
     // data comes back successfully for mealItem Component 
     

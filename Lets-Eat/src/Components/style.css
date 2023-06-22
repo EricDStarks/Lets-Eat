@@ -8,6 +8,7 @@
     text-align: center;
 }
 
+
 /* Styles for the search bar */
 .searchBox {
     display: flex;
@@ -34,6 +35,18 @@
 img {
     width: 100%;
     border-radius: 1rem;
+
+/* this is the display of images of food */
+img { 
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.main .heading img{
+    width: 120px;
+    top: 10px;
+    left: 1000px;
+
 }
 
 .container {

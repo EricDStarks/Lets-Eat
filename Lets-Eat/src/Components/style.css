@@ -1,15 +1,40 @@
-
-/* this styles the entire page */
-*{
+/* Styles the entire page */
+* {
     padding: 0;
     margin: 0;
 }
 
-
 .main {
     text-align: center;
-    
 }
+
+
+/* Styles for the search bar */
+.searchBox {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 25px auto;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.search-icon {
+    padding: 5px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Styles for the rest of the components */
+img {
+    width: 100%;
+    border-radius: 1rem;
 
 /* this is the display of images of food */
 img { 
@@ -21,13 +46,62 @@ img {
     width: 120px;
     top: 10px;
     left: 1000px;
+
 }
 
-/* this container is for the images in the grid */
 .container {
     width: 80%;
     margin: 25px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 2rem;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 60%;
+    max-height: 80%;
+    text-align: center;
+    position: relative;
+    overflow: auto;
+}
+
+.modal-content h1,
+.modal-content h2,
+.modal-content h3,
+.modal-content h4,
+.modal-content h5,
+.modal-content h6,
+.modal-content p {
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal img {
+    max-width: 40%;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+body {
+    background: linear-gradient(to right, #049ed2, #318af7, #054b77);
 }
